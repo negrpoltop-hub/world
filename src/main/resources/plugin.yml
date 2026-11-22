@@ -1,0 +1,15 @@
+name: WorldRestore
+version: 1.0.0
+main: dev.restore.worldrestore.WorldRestorePlugin
+api-version: "1.21"
+description: Resets dungeons by removing player-placed blocks (except the outpost).
+commands:
+  worldrestore:
+    description: Manage dungeon reset
+    usage: /worldrestore <clear|status|reload|backup|restore> [world]
+    aliases: [wr]
+    permission: worldrestore.admin
+permissions:
+  worldrestore.admin:
+    default: op
+  
